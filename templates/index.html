@@ -1,0 +1,550 @@
+{% extends "base.html" %}
+{% block title %}Roronoa web{% endblock %}
+{% block content %}
+<style type="text/css">
+	
+.imag{
+	/*filter: brightness(70%);*/
+  	width: 76%;
+	height: 70%;
+	background-size:no-repeat center center fixed;
+	position: relative;
+	left: 23%;
+	top: 8%;
+}
+
+.cont{
+	position: absolute;
+	top: 17%;
+
+}
+.att{
+	text-shadow: black 1px 0 3px;
+	color: white;
+	position: relative;
+	left: 2%;
+	font-family: cursive;
+	font-size: 70px;
+
+}
+
+.nino{
+    color: #1bacff;
+}
+.conti{
+	position: relative;
+	height: 800px;
+	width: 100%;
+
+}
+.conti img{
+	height: 100%;
+	width: 100%;
+}
+.about{
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	color: #1bacff;
+	text-shadow: black 1px 0 3px;
+	text-decoration: underline overline #42B4EA  ;
+	font-size: 60px;
+
+}
+.txt{
+	position: absolute;
+	top: 22%;
+	left: 8%;
+	color: #494C4D  ;
+	text-shadow: black 1px 0 3px;
+	font-size: 25px;
+
+
+}
+
+
+.txt2{
+	position: absolute;
+	top: 44%;
+	left: 8%;
+	color: #494C4D  ;
+	text-shadow: black 1px 0 3px;
+	font-size: 25px;
+
+
+}
+
+
+.btnv{
+    position: absolute;
+    top: 55%;
+    left: 4%;
+
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+
+.button2 {
+  background-color: white; 
+  color: #1bacff; 
+  border: 2px solid #008CBA;
+  border-radius: 26px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+/*pour le boutton Read More*/
+
+.btnt{
+    position: absolute;
+    top: 80%;
+    left: 8%;
+
+}
+
+.button1 {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+
+.button22 { 
+  color: #1bacff; 
+  border: 2px solid #008CBA;
+  border-radius: 26px;
+}
+
+.button22:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/*pour le boutton Register Now*/
+
+.btnn{
+    position: relative;
+    top: 10%;
+    left: 44%;
+
+}
+.buttonn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+
+
+.buttonn2 {
+  background-color: white; 
+  color: #1bacff; 
+  border: 2px solid #008CBA;
+  border-radius: 26px;
+}
+
+.buttonn2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+div.gallery {
+	position: absolute;
+	top: 17%;
+	left: 60%;
+  	margin: 5px;
+  	border: 4px solid #1bacff;
+  	border-style: inset;
+  	width: 280px;
+}
+
+div.gallery2 {
+	position: absolute;
+	top: 17%;
+	left: 80%;
+  	margin: 5px;
+  	border: 4px solid #1bacff;
+  	border-style: inset;
+  	width: 280px;
+}
+
+div.gallery3 {
+	position: absolute;
+	top: 52%;
+	left: 60%;
+  	margin: 5px;
+  	border: 4px solid #1bacff;
+  	border-style: inset;
+  	width: 280px;
+}
+
+div.gallery4 {
+	position: absolute;
+	top: 52%;
+	left: 80%;
+  	margin: 5px;
+  	border: 4px solid #1bacff;
+  	border-style: inset;
+  	width: 280px;
+}
+
+div.gallery:hover {
+  border: 4px solid #777;
+  
+}
+
+div.gallery2:hover {
+  border: 4px solid #777;
+}
+div.gallery3:hover {
+  border: 4px solid #777;
+}
+div.gallery4:hover {
+  border: 4px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+div.gallery2 img {
+  width: 100%;
+  height: 200px;
+}
+
+div.gallery3 img {
+  width: 100%;
+  height: 200px;
+}
+
+div.gallery4 img {
+  width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.contin{
+	position: relative;
+	margin-top: 100px;
+	left: 55%;
+	height: 280px;
+	width: 480px;
+}
+.contin2{
+	position: relative;
+	margin-top: 150px;
+	left: 17%;
+	height: 290px;
+	width: 500px;
+}
+.contin3{
+	position: relative;
+	margin-top: 130px;
+	left: 55%;
+	height: 290px;
+	width: 500px;
+}
+
+.contin img{
+	height: 100%;
+	width: 100%;
+}
+.contin2 img{
+	height: 100%;
+	width: 100%;
+}
+.contin3 img{
+	height: 100%;
+	width: 100%;
+}
+.h2t{
+	position: absolute;
+	left: 18%;
+	top: 223%;
+}
+.h2t h2{
+	font-size: 40px;
+}
+
+.h2t1{
+	position: absolute;
+	left: 55%;
+	top: 280%;
+}
+.h2t1 h2{
+	font-size: 40px;
+}
+
+.h2t2{
+	position: absolute;
+	left: 18%;
+	top: 334%;
+}
+.h2t2 h2{
+	font-size: 40px;
+}
+.siso{
+
+	color: #1bacff;
+	text-shadow: black 1px 0 3px;
+	font-size: 50px;
+
+}
+.p2{
+	font-size: 17px;
+}
+.jih{
+	width: 100%;
+	height: 350px;
+}
+.jih img{
+	width: 100%;
+	height: 100%;
+}
+.jih h2{
+	position: relative;
+	margin-top: -340px;
+	left:33.2%;
+
+}
+/*
+.jih p{
+	position: relative;
+	margin-top: 50px;
+	
+
+}*/
+.j1{
+	position: relative;
+	margin-top: 50px;
+	left:29%;
+
+}
+.j2{
+	position: relative;
+	margin-top: -10px;
+	left:31%;
+
+}
+.j3{
+	position: relative;
+	margin-top: -10px;
+	left:33%;
+
+}
+
+</style>
+<header><image class="imag" src="{{ url_for('static', filename='img/dev.jpg')}}"></header>
+<div class="cont">
+
+<h1 class="att"><span class="nino">Boost up your skills<br>with a new way of<br>learning.</span></h1>
+</div>
+
+<a href="#"><button class="button button2 btnv">View More</button></a>
+<a href="#about">
+<div class="box">
+	<span></span>
+	<span></span>
+	<span></span>
+</div></a>
+<div class="conti">
+	<img src="static/img/blanc.jpg" id="about">
+	<h2 class="about" >About Us</h2>
+	<p class="txt">StudyGroup trains future digital talents.<br> Experts capable of designing innovative projects<br> and participating in the digital transformation<br> of society in Morocco and internationally.</p>
+	<p class="txt2">Thanks to its expertise in the professional digital world,<br> its “Learning by Doing” project-oriented pedagogy, StudyGroup<br> offers excellent training in new digital professions:<br> UX / UI Design, mobile web development,<br> full-stack and digital marketing. <br>A degree course or professional certification<br> in line with the needs of the job market.</p>
+	<div class="gallery">
+      <a target="_blank" href="static/img/dev1.jpg">
+        <img src="static/img/dev1.jpg" alt="dev" width="600" height="400">
+      </a>
+      <div class="desc">Info Developement</div>
+    </div>
+
+    <div class="gallery2">
+      <a target="_blank" href="static/img/dev2.jpg">
+        <img src="static/img/dev2.jpg" alt="devv" width="600" height="400">
+      </a>
+      <div class="desc">Domaine Pro</div>
+    </div>
+
+    <div class="gallery3">
+      <a target="_blank" href="static/img/dev3.jpg">
+        <img src="static/img/dev3.jpg" alt="dev" width="600" height="400">
+      </a>
+      <div class="desc">Good Vibe</div>
+    </div>
+
+    <div class="gallery4">
+      <a target="_blank" href="static/img/dev4.jpg">
+        <img src="static/img/dev4.jpg" alt="dev" width="600" height="400">
+      </a>
+      <div class="desc">Ui/Ux Design</div>
+    </div>
+
+    <a href="#"><button class="button1 button22 btnt">Read More</button></a>
+
+
+</div>
+<div class="contin">
+	<img src="static/img/sp.png" id="dev">
+</div>
+<div class="h2t">
+	<h2>MULTIMEDIA WEB<br><span class="siso">DEVELOPMENT</span></h2>
+	<p class="p2">The web developer training (mobile developer, back-end, full stack)<br> trains specialists in the computer programming<br> of websites and mobile applications.<br></p> 
+	<p class="p2">This training entitles the holder to the specialized<br> and which leads to the development.</p>
+
+</div>
+
+
+
+
+
+<div class="contin2">
+	<img src="static/img/ph.jpg" id="inf">
+</div>
+<div class="h2t1">
+	<h2>WEB UX DESIGN <br><span class="siso">INFOGRAPHY</span></h2>
+	<p class="p2">Creative and innovative, the business of<br> computer graphics, UX Designer, Web Designer<br> was born from the development of computer tools<br></p> 
+	<p class="p2">Web communication. He is an "artistic designer".<br> He creates visual communication supports, web interfaces.</p>
+
+</div>
+
+
+
+
+<div class="contin3">
+	<img src="static/img/xd.jpg">
+</div>
+<div class="h2t2">
+	<h2>WEB UI DESIGN <br><span class="siso">INFOGRAPHY</span></h2>
+	<p class="p2">it could be a website layout, mobile app, or print media.<br>Its objective is to translate an idea, a message<br> into visual communicating to pass a clear and effective message.</p> 
+	<p class="p2">Web communication. He is an "artistic designer".<br> He creates visual communication supports, web interfaces.</p>
+
+</div><br><br><br><br>
+<div class="jih">
+	<img src="static/img/jih.jpg">
+	<h2 class="siso">Start Registration Now</h2>
+	<p class="p2 j1">StudyGroup welcomes on file a selection of candidates with a bachelor's degree with</p>
+	<p class="p2 j2">any option for the computer graphics & web design sector and scientific</p>
+	<p class="p2 j3">or technical baccalaureate for the web/multimedia development.</p>
+	<a href="/signup"><button class="buttonn buttonn2 btnn">Register Now</button></a>	
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>site with flask</title>
+</head>
+<body>
+	<h1>hello</h1>
+
+
+
+
+
+
+
+
+	
+	<p>hello, welcome to this <h3>web site</h3> </p>
+	<p> {{content}} </p>
+	<p> {{y}} </p>
+    
+
+    {% for i in range(0, 50) %}
+        {% if i % 2 == 1  %}
+             <p> {{i}} </p>
+        {% endif %}
+    {% endfor %}
+    
+</body>
+</html>
+
+-->
